@@ -9,7 +9,7 @@ const port = 3000;
 
 //middleware
 app.use(cors({
-  origin: 'https://yoga-master-design.vercel.app',
+  origin: 'https://yoga-master-design-new.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
