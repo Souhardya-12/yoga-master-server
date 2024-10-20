@@ -8,7 +8,11 @@ const port = 3000;
 // console.log("user name: ", process.env.DB_USER);
 
 //middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://yoga-master-design.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
 app.use(express.json());
 
 //verify token
